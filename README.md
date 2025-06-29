@@ -1,6 +1,8 @@
 # SkillForge: Your AI-Powered Career Planning Platform
 
-![SkillForge Logo](/src/assets/skillfroge.png)
+<div align="center">
+  <img src="/src/assets/skillfroge.png" alt="SkillForge Logo" width="200" height="auto">
+</div>
 
 SkillForge is a comprehensive web application designed to empower individuals on their career learning journey. Leveraging the power of AI, it provides personalized learning roadmaps, facilitates goal tracking, offers AI-powered mock interviews, and presents detailed analytics to monitor skill development and progress.
 
