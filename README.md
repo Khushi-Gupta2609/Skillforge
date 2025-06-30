@@ -34,7 +34,7 @@ SkillForge is a comprehensive web application designed to empower individuals on
 **Build Tool:**
 - Vite
 
-## 🛠️ Link to [Live Demo](skillforge-smoky.vercel.app/)
+## 🛠️ Link to [Live Demo](https://skillforge-smoky.vercel.app/)
 
 ## 🛠️ Installation & Setup
 
