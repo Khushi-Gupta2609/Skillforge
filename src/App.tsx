@@ -6,12 +6,13 @@ import { AuthPage } from './pages/AuthPage';
 import { DashboardLayout } from './components/dashboard/DashboardLayout';
 import { LoadingSpinner } from './components/common/LoadingSpinner';
 
+
 const AppContent: React.FC = () => {
   const { currentUser, loading } = useAuth();
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4">
         <div className="text-center">
           <LoadingSpinner size="lg" className="mx-auto mb-4" />
           <p className="text-gray-600 dark:text-gray-400">Loading SkillForge...</p>

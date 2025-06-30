@@ -4,7 +4,8 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   signOut,
-  onAuthStateChanged
+  onAuthStateChanged,
+  updateProfile // <--- ADDED: Import updateProfile
 } from 'firebase/auth';
 import type { User } from 'firebase/auth';
 import { ref, set, get } from 'firebase/database';
@@ -82,6 +83,9 @@ export class AuthService {
       const result = await createUserWithEmailAndPassword(auth, email, password);
       const user = result.user;
       
+      // ADDED: Update Firebase Auth user profile with display name
+      await updateProfile(user, { displayName }); 
+
       // Create user profile in Realtime Database
       await this.createUserProfile(user, { displayName });
       console.log('✅ Firebase: User created successfully');

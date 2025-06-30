@@ -1,0 +1,21 @@
+/* src/styles/custom_overrides.css */
+
+/* If the problem is on the main content wrapper: */
+.flex-1.flex.flex-col.min-w-0 {
+    margin-left: 0 !important;
+}
+
+/* OR if the problem is directly on the <main> tag despite its classes: */
+main.flex-1.overflow-x-hidden.overflow-y-auto {
+    margin-left: 0 !important;
+}
+
+/* OR if it's on a specific class within your page components: */
+/* .some-component-root-div {
+    margin-left: 0 !important;
+} */
+
+/* Or if it's really coming from the generic .ml-16 Tailwind class itself and overriding previous attempts */
+.ml-16 {
+    margin-left: 0 !important;
+}
